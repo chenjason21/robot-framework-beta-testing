@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230220 20:28:47.899" rpa="false" schemaversion="3">
+<suite id="s1" name="Form Test" source="D:\React Project\Robot\robot-framework-beta-testing-main\form_test.robot">
+<test id="s1-t1" name="Facebook Form Signup Testing" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230220 20:28:48.098" level="INFO">Opening browser 'Chrome' to base url 'https://web.facebook.com/signup'.</msg>
+<status status="PASS" starttime="20230220 20:28:48.098" endtime="20230220 20:28:53.011"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=firstname</arg>
+<arg>Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230220 20:28:53.013" level="INFO">Typing text 'Testing' into text field 'name=firstname'.</msg>
+<status status="PASS" starttime="20230220 20:28:53.012" endtime="20230220 20:28:53.102"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=lastname</arg>
+<arg>Robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230220 20:28:53.103" level="INFO">Typing text 'Robot' into text field 'name=lastname'.</msg>
+<status status="PASS" starttime="20230220 20:28:53.103" endtime="20230220 20:28:53.175"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=reg_email__</arg>
+<arg>testing@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230220 20:28:53.176" level="INFO">Typing text 'testing@gmail.com' into text field 'name=reg_email__'.</msg>
+<status status="PASS" starttime="20230220 20:28:53.175" endtime="20230220 20:28:53.261"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>birthday_day</arg>
+<arg>30</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230220 20:28:53.262" level="INFO">Selecting options from selection list 'birthday_day' by value 30.</msg>
+<status status="PASS" starttime="20230220 20:28:53.262" endtime="20230220 20:28:53.322"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>birthday_month</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230220 20:28:53.324" level="INFO">Selecting options from selection list 'birthday_month' by value 1.</msg>
+<status status="PASS" starttime="20230220 20:28:53.323" endtime="20230220 20:28:53.385"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>birthday_year</arg>
+<arg>2001</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230220 20:28:53.386" level="INFO">Selecting options from selection list 'birthday_year' by value 2001.</msg>
+<status status="PASS" starttime="20230220 20:28:53.386" endtime="20230220 20:28:53.447"/>
+</kw>
+<kw name="Radio Button Should Not Be Selected" library="SeleniumLibrary">
+<arg>sex</arg>
+<doc>Verifies radio button group ``group_name`` has no selection.</doc>
+<msg timestamp="20230220 20:28:53.448" level="INFO">Verifying radio button 'sex' has no selection.</msg>
+<status status="PASS" starttime="20230220 20:28:53.448" endtime="20230220 20:28:53.479"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>sex</arg>
+<arg>1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230220 20:28:53.479" level="INFO">Selecting '1' from radio button 'sex'.</msg>
+<status status="PASS" starttime="20230220 20:28:53.479" endtime="20230220 20:28:53.532"/>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<arg>sex</arg>
+<arg>1</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<msg timestamp="20230220 20:28:53.533" level="INFO">Verifying radio button 'sex' has selection '1'.</msg>
+<status status="PASS" starttime="20230220 20:28:53.532" endtime="20230220 20:28:53.556"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230220 20:28:53.557" endtime="20230220 20:28:55.645"/>
+</kw>
+<status status="PASS" starttime="20230220 20:28:48.084" endtime="20230220 20:28:55.645"/>
+</test>
+<status status="PASS" starttime="20230220 20:28:47.899" endtime="20230220 20:28:55.647"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Form Test">Form Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
